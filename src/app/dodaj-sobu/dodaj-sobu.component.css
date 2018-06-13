@@ -1,0 +1,12 @@
+.forma {
+  border: 1px solid #fff;
+  padding: 50px 60px;
+  -webkit-box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75);
+  -moz-box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75);
+  box-shadow:  -1px 4px 26px 11px rgba(0,0,0,0.75);
+}
+.form-group{
+  font-size: 18px;
+  color:white;
+  font-weight: bold;
+}

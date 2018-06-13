@@ -1,0 +1,11 @@
+<div class="image-bg-fixed-height-4">
+<div class="centered">
+<form class="forma" role="form" [formGroup]="addRoomTypeForm">
+  <div class="form-group">
+    <label style="color:white;"for="name">Ime tipa sobe:</label>
+    <input type="text" class="form-control" formControlName='name'>
+  </div>
+  <button (click)="addRoomType()" class="btn btn-default">Dodaj tip sobe</button>
+</form>
+</div>
+</div>

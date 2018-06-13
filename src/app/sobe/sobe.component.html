@@ -1,0 +1,29 @@
+<div class="form-group" align="center" style="width:70%;padding-top: 20px;margin: 0 auto;">
+			<input type="text" class="form-control" placeholder="Broj Kreveta" [(ngModel)]="broj_kreveta" ng-minlength="1">
+		</div>
+<table class="table" align="center">
+  <thead>
+    <tr>
+      <th>Ime</th>
+      <th>Broj kreveta</th>
+      <th>TV</th>
+    </tr>
+  </thead>
+  <tbody>
+
+		<tr  *ngFor="let soba of sobe | SearchPipe:broj_kreveta ">
+
+			<td>{{soba.roomname}}</td>
+			<td>{{soba.beds}}</td>
+			<td>
+				<span *ngIf="soba.tv == '1'">
+				TV: Ima
+				 </span>
+			<span *ngIf="soba.tv != '1'">
+					TV: Nema
+			</span>
+		</td>
+		</tr>
+  </tbody>
+
+</table>

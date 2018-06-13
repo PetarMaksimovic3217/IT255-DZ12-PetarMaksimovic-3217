@@ -1,0 +1,29 @@
+<div class="image-bg-fixed-height-3">
+<div class="centered">
+<form class="forma" role="form" [formGroup]="addRoomForm">
+    <div class="form-group">
+       <label style="color:white;"for="roomName">Ime sobe:</label>
+       <input type="text" class="form-control" formControlName='roomname'>
+     </div>
+      <div class="form-group">
+       <label style="color:white;"for="hasTV">TV:</label>
+       <select class="form-control" ng-selected="Yes" formControlName='tv'>
+           <option value="1" >Da</option>
+           <option value="0" >Ne</option>
+       </select>
+     </div>
+     <div class="form-group">
+       <label style="color:white;"for="beds">Kreveti:</label>
+       <input type="number" class="form-control" formControlName='beds'>
+     </div>
+     <div class="form-group">
+       <label style="color:white;"for="room_type">Tip sobe:</label>
+       <select formControlName='room_type' class="form-control" ng-selected="Yes" >
+         <option value="" selected>Izaberi tip sobe</option>
+         <option *ngFor="let room_type of room_types" [value]="room_type.id">{{room_type.name}}</option>
+       </select>
+     </div>
+     <button (click)="addRoom()" class="btn btn-default">Dodaj sobu</button>
+   </form>
+ </div>
+</div>

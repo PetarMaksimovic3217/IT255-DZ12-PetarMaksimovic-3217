@@ -1,0 +1,22 @@
+<div class="image-bg-fixed-height-1">
+<div class="centered">
+  <form class="forma" role="form" [formGroup]="loginForm">
+    <h1>Forma za Login</h1>
+          <div class="alert alert-danger" style="display: none;">
+
+          </div>
+           <div class="form-group">
+            <label for="username" style="font-size: 18px;color:white;font-weight: bold;">Username</label>
+            <input type="text" class="form-control" formControlName="username" id="email" aria-describedby="usernameHelp" placeholder="Unesi username">
+
+           </div>
+           <div class="form-group">
+            <label for="password" style="font-size: 18px;color:white;font-weight: bold;">Password</label>
+            <input type="password" class="form-control" formControlName="password" minlength="5" id="password" placeholder="Password">
+           </div>
+
+              <button (click)="login()" class="btn btn-success btn-block">Login</button>
+        </form>
+
+    </div>
+</div>
